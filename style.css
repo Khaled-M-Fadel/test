@@ -8,6 +8,19 @@
     scroll-behavior: smooth; 
 }
 
+/* تعريف الخط باستخدام @font-face */
+@font-face {
+    font-family: 'Aref';
+    src: url('fonts/ArefRuqaa-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Amiri';
+    src: url('fonts/Amiri-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 header {
     text-align: center;
@@ -27,6 +40,7 @@ header {
     font-weight: 900;
     font-size:2em;
     margin:auto ;
+    font-family: 'Aref',sans-serif;
     
 }
 
@@ -39,24 +53,30 @@ section {
 .main {
     width: 100%;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
     background-attachment: scroll;
+    justify-content: space-between;
 }  
+
+.main .content{
+    justify-content: space-between;
+}
 .main text{
     position: relative;
+    direction: rtl;
 }
 
 .main h2 {
     color: #000000;
     font-size: 1.3em;
     font-weight: 500;
+    direction: rtl;
 }
 
 .main h1 {
     color: #000000;
     font-size: 2.3em;
     font-weight: 500;
+    direction: rtl;
 }
 
 
@@ -66,11 +86,14 @@ section {
     color: #3a6cf4;
     font-size: 3em;
     font-weight: 600;
+    direction: rtl;
+    font-family: 'Aref',sans-serif;
 }
 
 .main h3 span {
     color: #b80404;
-
+    direction: rtl;
+    font-family: 'Amiri',sans-serif;
 }
 .main h3 {
     color: #000000;
@@ -79,7 +102,15 @@ section {
     letter-spacing: 1px;
     margin-top: 10px;
     margin-bottom: 30px;
-    align-items: center;
+    direction: rtl;
+    font-family: 'Amiri',sans-serif;
+}
+.content p{
+    max-width: 100%;
+    font-size: 1.5em;
+    font-weight: 700;
+    direction: rtl;
+    font-family: 'Amiri',sans-serif;
 }
 
 .content img{
@@ -112,6 +143,7 @@ section {
     direction: rtl;
     line-height: 2;
     flex: 1;
+    font-family: 'Amiri',sans-serif;
 }
 
 .project-title {
@@ -132,6 +164,7 @@ section {
     font-size: 3.5em;
     font-weight: 800;
     margin-bottom: 30px;
+    font-family: 'Aref',sans-serif;
 }
 
 .content {
@@ -179,6 +212,10 @@ section {
     font-size: 1.5em;
     font-weight: 800;
     margin: 10px;
+    font-family: 'Amiri',sans-serif;
+}
+.info p{
+    font-family: 'Amiri',sans-serif;
 }
 
 
@@ -203,7 +240,14 @@ section {
     padding: 2em;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+padding: 8px 200px ;
 }
+
+
 
 .footer-title {
     font-size: 1.3em;
