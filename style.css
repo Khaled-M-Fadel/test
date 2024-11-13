@@ -257,7 +257,9 @@ section {
     .projects .content p {
         font-size: 1rem;
     }
-
+    .card {
+        width: 33em;
+    }
 }
 
 @media (max-width:641px){
