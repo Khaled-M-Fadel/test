@@ -274,6 +274,9 @@ section {
     .main-content h3{
         font-size: 1.4em;
     }
+    .card {
+        width: 30em;
+    }
 }
 
 @media (max-width:300px){
